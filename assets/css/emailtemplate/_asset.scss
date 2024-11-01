@@ -1,0 +1,29 @@
+// Template Color : https://flatuicolors.com/palette/defo
+$nephritis : #27ae60;
+$amethyst: #9b59b6;
+$wisteria: #8e44ad;
+$wetasphalt: #34495e;
+$carrot: #e67e22;
+$alizarin: #e74c3c;
+$concrete: #95a5a6;
+$silver: #bdc3c7;
+$peterriver: #3498db;
+
+// Btn
+.btn-submit {
+  cursor:pointer;
+  border:none;
+  background: $concrete;
+  color:#000;
+  padding: 8px 25px;
+  border-radius:5px;
+}
+
+// Background
+.bg-amethyst { background: $amethyst; }
+.bg-wetasphalt { background: $wetasphalt; }
+.bg-carrot { background: $carrot; }
+.bg-alizarin { background: $alizarin; }
+
+// Text
+.text-alizarin { color:$alizarin; }

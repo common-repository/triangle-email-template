@@ -1,0 +1,214 @@
+/**
+* Page Setting
+* @backend
+*/
+#section-setting {
+  #form-result {
+    display:none;
+    padding:10px 0;
+    font-weight:bold;
+    &.form-result-false{
+      display: block;
+      color: $alizarin;
+    }
+    &.form-result-true{
+      display: block;
+      color: $nephritis;
+    }
+  }
+  #field_option_absolute_location  {
+    display:inline;
+    li {
+      margin-left:20px;
+      display:inline;
+    }
+  }
+  .btn-submit {
+    background: $alizarin;
+    color:#fff;
+  }
+}
+
+/**
+* Page Contact
+* @backend
+*/
+#section-contact {
+  #add-user-to-lists {
+    cursor:pointer;
+    border:none;
+    background: $nephritis;
+    color:#fff;
+    padding: 7px 25px;
+    border-radius:5px;
+  }
+  .badges {
+    display:inline-block;
+    background: $silver;
+    padding:8px 10px;
+    margin:2px;
+    i {
+      cursor: pointer;
+      margin-right: 5px;
+    }
+  }
+  .btn-submit {
+    background: $carrot;
+    color:#fff;
+  }
+}
+#section-send {
+  #email_status {
+    display:none;
+    margin:200px;
+    text-align:center;
+  }
+}
+
+/**
+* Page Email Template
+* @backend @edit
+*/
+#section-builder {
+  #builder_dom {
+    /** Templating */
+    line-height: 1.8;
+    h1,h2,h3,h4,h5,h6 {
+      font-weight:300;
+      padding: 0;
+      margin: 0;
+    }
+    h1 { font-size:28px }
+    h2 { font-size:24px; }
+    h2 { font-size:22px; }
+    h3 { font-size:20px; }
+    h4 { font-size:18px; }
+    a { color: $peterriver; }
+    p, li {
+      font-size:15px;
+      margin: 0;
+    }
+    img {
+      max-width:100%;
+      height:auto;
+    }
+    .btn {
+      padding: 5px 18px;
+      border-radius: 5px;
+      background: #bfbfbf;
+      color: #ffffff;
+      display:inline-block;
+    }
+    .btn-primary { background: $amethyst; }
+    /** Grid Template */
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    max-width:800px;
+    .row {
+      width:100%;
+      height:auto;
+      position: relative;
+      border-radius: 3px;
+      margin: 0;
+      z-index: 1;
+      min-height: 30px;
+      &:hover {
+        border: 2px solid $amethyst;
+        z-index: 2;
+      }
+      .row-header {
+        position: relative;
+        overflow: hidden;
+        padding: 8px 20px;
+        background: $amethyst;
+        color: #fff;
+        border-radius: 3px 3px 0 0;
+      }
+      .row-content:after {
+        content: " ";
+        display: block;
+        height: 0;
+        clear: both;
+      }
+    }
+    .element {
+      position: relative;
+      padding: 0;
+      -webkit-transition: transform 0.25s ease-in-out;
+      -moz-transition: transform 0.25s ease-in-out;
+      -o-transition: transform 0.25s ease-in-out;
+      transition: transform 0.25s ease-in-out;
+      &:hover {
+        cursor: pointer;
+      }
+      &.ui-sortable-helper {
+        transform: scale(1.015);
+        z-index: 100;
+      }
+      .element-content {
+        font-size: 17px;
+        cursor: pointer;
+        z-index:0;
+        a { text-decoration:none; }
+      }
+    }
+    .row-dropzone {
+      border: 2px solid $amethyst;
+      min-height: 70px;
+    }
+    .element-highlight .element-content {
+      border:1px dashed $amethyst;
+    }
+  }
+  #row-setting {
+    position:absolute;
+    z-index:9999;
+    right:0;
+    margin-top: -40px;
+    background: $amethyst;
+    border-radius: 5px 5px 0 0;
+    a {
+      background: $amethyst;
+      color: #fff;
+      padding: 4px;
+      border:none;
+      cursor:pointer;
+      i { padding: 0 3px; }
+    }
+  }
+  #element-setting {
+    position:absolute;
+    right:-25px;
+    background: $amethyst;
+    border-radius: 5px;
+    padding: 3px 0;
+    margin: 0;
+    z-index:9999;
+    a {
+      display:block;
+      background: $amethyst;
+      color: #fff;
+      padding: 4px;
+      border:none;
+      cursor:pointer;
+      i { padding: 0 3px; }
+    }
+  }
+}
+#section-codeeditor {
+  padding: 10px;
+  #juice-builder-elements { display:none !important; }
+  .container, .element_fields { display:none; }
+  #template-elements, .select2-container {
+    width:100% !important;
+    display:none;
+  }
+  #template-editor {
+    width:100%;
+    margin-top:2px;
+    min-height:800px;
+    textarea {
+      min-height:400px;
+    }
+  }
+}

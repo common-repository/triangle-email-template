@@ -1,0 +1,27 @@
+{
+  "name" : "Triangle",
+  "version" : "1.0.4",
+  "production" : false,
+  "enableHooks" : ["action", "filter", "shortcode"],
+  "defaultSettings" : {
+    "background" : "#efefef",
+    "container" : {
+      "width" : "800"
+    }
+  },
+  "templates": [
+    {
+      "text": "Element",
+      "children": [
+        {"id": "html", "text": "Html", "mode" : "ace/mode/html"},
+        {"id": "standard", "text": "Html", "mode" : "ace/mode/html"}
+      ]
+    },
+    {
+      "text": "Element",
+      "children": [
+        {"id": "css", "text": "Css", "mode" : "ace/mode/css"}
+      ]
+    }
+  ]
+}

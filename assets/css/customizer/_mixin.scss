@@ -1,0 +1,39 @@
+// Grid
+// $grid__bp-md = Grid size
+// $grid__cols = n Element of column
+@mixin grid($grid__bp-md, $grid__cols){
+  @if unit($grid__bp-md) == 'px' {
+    max-width: $grid__bp-md * 1px;
+  } @else {
+    max-width: $grid__bp-md;
+  }
+  margin: 0 auto;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  @for $i from 1 through $grid__cols {
+    .col-#{$i} {
+      flex-basis: (100 / ($grid__cols / $i) ) * 1%;
+    }
+  }
+}
+
+// Media Queries
+// $arg1 = 0 = Low to High, 1 = High to Low
+// $arg2 = Max Width
+// $arg3 = Min Width
+@mixin mQ($arg...){
+  @if (length($arg) == 2) {
+    @if (nth($arg, 1) == 0) {
+      @media screen and (max-width: nth($arg, 2) ){ @content; }
+    } @elseif (nth($arg, 1) == 1){
+      @media screen and (min-width: nth($arg, 2) ){ @content; }
+    }
+  } @elseif(length($arg == 3)) {
+    @media screen and (max-width: nth($arg, 2) ) and (min-width: nth($arg, 3) ){
+      @content;
+    }
+  }
+}

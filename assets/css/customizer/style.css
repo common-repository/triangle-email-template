@@ -1,0 +1,18 @@
+/**
+* Template control - @section @setting
+*/
+#sub-accordion-section-section_triangle_setting .customize-control {
+  padding-bottom: 5px; }
+#sub-accordion-section-section_triangle_setting #customize-control-control_triangle_post_id {
+  display: none !important; }
+
+/**
+* Template control - @section @css
+*/
+#sub-accordion-section-section_triangle_css .ace_editor {
+  background: #fff;
+  min-height: 600px; }
+  #sub-accordion-section-section_triangle_css .ace_editor .ace_active-line {
+    background: #fff; }
+
+/*# sourceMappingURL=style.css.map */
